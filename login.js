@@ -63,7 +63,7 @@ const API_URL = "https://script.google.com/macros/s/AKfycbzq26e3QS4XQqFgqjJjIm7q
 // Check if the user is already logged in by checking localStorage
 
 //-------
-const userStatusUrl = "https://script.google.com/macros/s/AKfycbzFgpCMbyypB9oat7GW05uvncFiayTSzoXqcT3t6WrlKyz8Oe07ZpLO9fpHLcjdEQ9c/exec"; // Replace with your web app URL
+const userStatusUrl = "https://script.google.com/macros/s/AKfycbzq26e3QS4XQqFgqjJjIm7qU6k0YymCv0IXgCo5rmpErhOQs0MCCGq7Fib3qoubGYM9lA/exec"; // Replace with your web app URL
 const email = localStorage.getItem("email"); // Assuming 'userEmail' is stored in local storage
 
 window.onload = async function () {
