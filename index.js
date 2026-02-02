@@ -38,7 +38,7 @@ sidebarToggle.addEventListener("click", toggleSidebar);
 
 //---------
  // Display user info or intro
-const userStatusUrl = "https://script.google.com/macros/s/AKfycbyeQ9ro0F_FIfe0i201HDGkn91J09VBSTI5wOcwse-U-NVCo1ll6BBabmuohyKYmf6n/exec"; // Replace with your web app URL
+const userStatusUrl = "https://script.google.com/macros/s/AKfycbzq26e3QS4XQqFgqjJjIm7qU6k0YymCv0IXgCo5rmpErhOQs0MCCGq7Fib3qoubGYM9lA/exec"; // Replace with your web app URL
 const email = localStorage.getItem("email"); // Assuming 'userEmail' is stored in local storage
 
 window.onload = async function () {
@@ -504,7 +504,8 @@ document.getElementById("editDueDateshow").textContent = formattedDate;
   // Display the modal
   document.getElementById("editTicketModal").style.display = "block";
 }
-function closeEditModal() {
+
+function closeEditModal() {
   // Close the modal by hiding it
   document.getElementById("editTicketModal").style.display = "none";
 }
@@ -681,6 +682,7 @@ async function openEditUserModal() {
     }
   } catch (error) {
       hideLoading();
+
     console.error("Error fetching user details:", error);
     showPopupMessage("Failed to load user details. Please try again.");
   }
